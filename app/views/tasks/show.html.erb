@@ -1,0 +1,11 @@
+<h1><%= @task.title %></h1>
+
+<div class="container" style="background-color:#D9D9D9; padding: 10px; margin: 10px;">
+  <%= @task.details %>
+</div>
+
+<%= @task.completed ? "✅ Tarea completada" : "❌ Tarea por completar" %>
+<p></p>
+<p><%= link_to "Editar", edit_task_path %></p>
+<hr>
+<%= link_to "<- Todas las tareas", tasks_path %>
